@@ -1,0 +1,7 @@
+
+class Solution:
+    def twoSum(self, nums, target): #hopefully this simplies the default example
+        for i,val1 in enumerate(nums): #enumarate makes i the space/index within the list[0 through whatever last index0,1,2,3], and val the actual value any random number[2,7,11,15]
+            for j,val2 in enumerate(nums):
+                if val1 + val2 == target and i != j:
+                    return [i,j]
